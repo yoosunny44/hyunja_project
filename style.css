@@ -111,6 +111,38 @@ section {
     margin: 15px auto 0;
 }
 
+/* 서브 페이지 전용 스타일 */
+.content-detail {
+    margin-top: 80px;
+    background-color: var(--card-bg);
+    padding: 80px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.text-block h3 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    margin: 40px 0 20px;
+    color: var(--accent-color);
+}
+
+.text-block p {
+    margin-bottom: 20px;
+    color: var(--text-main);
+    opacity: 0.9;
+    font-size: 1.05rem;
+}
+
+.text-block ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.text-block li {
+    margin-bottom: 10px;
+}
+
 /* Hero (메인 대문) */
 .hero {
     height: 100vh;
@@ -187,11 +219,13 @@ section {
     border-bottom: 4px solid var(--card-bg);
     transition: var(--transition);
     text-align: left;
+    display: block;
 }
 
 .expert-card:hover { border-bottom: 4px solid var(--point-color); transform: translateY(-5px); }
 .expert-card h4 { font-family: var(--serif); font-size: 1.4rem; color: var(--accent-color); margin-bottom: 15px; }
 .expert-card p { font-size: 0.95rem; color: var(--text-main); opacity: 0.8; }
+.more-link { display: inline-block; margin-top: 15px; color: var(--point-color); font-weight: 700; font-size: 0.9rem; }
 
 /* Contact */
 .contact { text-align: center; }
@@ -212,4 +246,5 @@ footer {
     .profile, .expert-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 2.8rem; }
     header { padding: 15px 20px; }
+    .content-detail { padding: 40px 20px; }
 }
